@@ -482,8 +482,7 @@ nav .container .btn a:hover{
 /* ===============================Cart Start===================================== */
 #cart{
     width: 1400px;
-    height: 1000px;
-    background: lightpink;
+    height: 600px;
     margin: 50px auto;
     display: flex;
     justify-content: center;
@@ -492,23 +491,130 @@ nav .container .btn a:hover{
 #cart .cart-container{
     width: 80%;
     height: 60%;
-    background: lightgray;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
-#cart .cart-container .child {
+#cart .cart-container .child{
     width: 23%;
     height: 350px;
     background: white;
     transition: .4s;
+    position: relative;
 }
-#cart .cart-container .child:hover{
+#cart .cart-container .child .arrow1{
+    width: 20px;
+    height: 5px;
+    background: aqua;
+    border-radius: 4px;
+    position: absolute;
+    top: 75%;
+    left: 35%;
+}
+#cart .cart-container .child .arrow2{
+    width: 20px;
+    height: 5px;
     background: rgb(63, 0, 191);
-    width: 25%;
+    border-radius: 4px;
+    position: absolute;
+    top: 75%;
+    left: 52%;
+    transition: .4s;
+}
+
+#cart .cart-container .child h3{
+    color: rgb(255, 61, ,141);
+    display: inline-block;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: .4s;
+}
+#cart .cart-container .child h4{
+    color: rgb(63, 0, 191);
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 29%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: .4s;
+}
+#cart .cart-container .child h5{
+    color: rgb(63, 0, 191);
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: .4s;
+}
+
+#cart .cart-container .child:hover {
+    background: rgb(63, 0, 191);
+    width: 27%;
     height: 360px;
 }
+#cart .cart-container .child:hover h3{
+    color: white;
+}
+#cart .cart-container .child:hover h4{
+    color: white;
+}
+#cart .cart-container .child:hover h5{
+    color: white;
+}
+#cart .cart-container .child:hover .arrow2{
+    background: white;
+}
+#cart .cart-container .child:hover .icons{
+    color: rgb(63, 0, 191);
+    cursor: pointer;
+}
+
+
+#cart .cart-container .child .bg{
+    width: 100%;
+    height: 220px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#cart .cart-container .child .bg button{
+    position: absolute;
+    top: 100%;
+    transform: translate(0, -100%);
+    width: 100px;
+    height: 40px;
+    border: 0;
+    background: rgb(0, 210, 105);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: .4s;
+}
+#cart .cart-container .child:hover button{
+
+    opacity: 1;
+}
+#cart .cart-container .child .bg .icons{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 
 
 /* ===================================Cart End================================= */
